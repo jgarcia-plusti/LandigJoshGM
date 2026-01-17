@@ -1,0 +1,12 @@
+{
+  "name": "landing-joshgm",
+  "version": "1.0.0",
+  "description": "Landing page para Josue Garcia Monterroso",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
