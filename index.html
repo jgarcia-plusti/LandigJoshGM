@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josue Garcia | Desarrollo Web & Backend</title>
     <meta name="description" content="Portafolio y servicios de desarrollo web de Josue Garcia Monterroso. Especialista en .NET, JavaScript y SQL.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="desarrollo web, backend, .NET, C#, JavaScript, SQL Server, PostgreSQL, full stack developer, Guatemala">
+    <meta name="author" content="Josue Garcia Monterroso">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Josue Garcia | Desarrollo Web & Backend">
+    <meta property="og:description" content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
+    <meta property="og:url" content="https://josuegarcia.dev">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Josue Garcia | Desarrollo Web & Backend">
+    <meta name="twitter:description" content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Josue Garcia Monterroso",
+      "jobTitle": "Ingeniero de Software & Full Stack Developer",
+      "description": "Especialista en desarrollo web, backend, .NET, JavaScript y SQL",
+      "url": "https://josuegarcia.dev"
+    }
+    </script>
+    
     <link rel="stylesheet" href="index.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +47,15 @@
         <div class="blob blob-3"></div>
     </div>
 
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <span class="theme-icon">🌙</span>
+    </button>
+
     <header>
         <div class="hero">
             <div class="hero-avatar">
-                <img src="./public/images/chibi_hola.png" alt="Avatar Josue" id="avatar-chiby" />
+                <img src="./public/images/chibi_hola.png" alt="Avatar Josue" id="avatar-chiby" loading="lazy" />
             </div>
             <div class="hero-info">
                 <h1>Josue Garcia Monterroso</h1>
@@ -32,8 +66,13 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="main-nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
@@ -41,6 +80,9 @@
             <li><a href="#faq">FAQ</a></li>
         </ul>
     </nav>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <div class="container">
         
@@ -189,7 +231,7 @@
                 <h2>Preguntas Frecuentes</h2>
                 <div class="faq-list">
                     <div class="faq-chibi-right">
-                        <img src="./public/images/chibi_dude.png" alt="Chibi Helper" />
+                        <img src="./public/images/chibi_dude.png" alt="Chibi Helper" loading="lazy" />
                     </div>
                     
                     <details class="faq-card">
@@ -221,23 +263,23 @@
         <div class="testimonials-carousel">
             <!-- Duplicados para efecto infinito smooth -->
             <blockquote class="hero-quote">
-                “Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar.”
+                "Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."
                 <span class="hero-quote-author">— Mario L., Gerente de Operaciones</span>
             </blockquote>
             <blockquote class="hero-quote">
-                “Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos.”
+                "Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
                 <span class="hero-quote-author">— Ana R., CTO Startup</span>
             </blockquote>
             <blockquote class="hero-quote">
-                “Muy recomendado. Entregó el proyecto a tiempo y la calidad del código es impecable.”
+                "Muy recomendado. Entregó el proyecto a tiempo y la calidad del código es impecable."
                 <span class="hero-quote-author">— Carlos D., Agencia Digital</span>
             </blockquote>
              <blockquote class="hero-quote">
-                “Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar.”
+                "Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."
                 <span class="hero-quote-author">— Mario L., Gerente de Operaciones</span>
             </blockquote>
             <blockquote class="hero-quote">
-                “Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos.”
+                "Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
                 <span class="hero-quote-author">— Ana R., CTO Startup</span>
             </blockquote>
         </div>
@@ -246,6 +288,14 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
