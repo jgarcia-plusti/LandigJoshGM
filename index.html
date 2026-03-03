@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josue Garcia | Desarrollo Web & Backend</title>
-    <meta name="description" content="Portafolio y servicios de desarrollo web de Josue Garcia Monterroso. Especialista en .NET, JavaScript y SQL.">
-    
+    <meta name="description"
+        content="Portafolio y servicios de desarrollo web de Josue Garcia Monterroso. Especialista en .NET, JavaScript y SQL.">
+
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="desarrollo web, backend, .NET, C#, JavaScript, SQL Server, PostgreSQL, full stack developer, Guatemala">
+    <meta name="keywords"
+        content="desarrollo web, backend, .NET, C#, JavaScript, SQL Server, PostgreSQL, full stack developer, Guatemala">
     <meta name="author" content="Josue Garcia Monterroso">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Josue Garcia | Desarrollo Web & Backend">
-    <meta property="og:description" content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
+    <meta property="og:description"
+        content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
     <meta property="og:url" content="https://josuegarcia.dev">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Josue Garcia | Desarrollo Web & Backend">
-    <meta name="twitter:description" content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
-    
+    <meta name="twitter:description"
+        content="Ingeniero de Software & Full Stack Developer. Especialista en .NET, JavaScript y SQL.">
+
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
@@ -33,13 +38,16 @@
       "url": "https://josuegarcia.dev"
     }
     </script>
-    
+
     <link rel="stylesheet" href="index.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
     <div class="gradient-bg">
         <div class="blob blob-1"></div>
@@ -49,7 +57,7 @@
 
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-        <span class="theme-icon">🌙</span>
+        <span class="theme-icon"><i data-lucide="moon"></i></span>
     </button>
 
     <header>
@@ -60,7 +68,8 @@
             <div class="hero-info">
                 <h1>Josue Garcia Monterroso</h1>
                 <h2>Ingeniero de Software & Full Stack Developer</h2>
-                <p class="hero-desc">Transformo ideas complejas en soluciones digitales robustas, escalables y modernas. Especialista en ecosistema .NET y tecnologías web.</p>
+                <p class="hero-desc">Transformo ideas complejas en soluciones digitales robustas, escalables y modernas.
+                    Especialista en ecosistema .NET y tecnologías web.</p>
                 <a href="#contacto" class="hero-btn">Iniciar Proyecto</a>
             </div>
         </div>
@@ -85,30 +94,17 @@
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <div class="container">
-        
         <section class="skills-bar">
             <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Stack Tecnológico Principal</h3>
-            <div class="skills-list">
-                <div class="skill">
-                    <span class="skill-name">JavaScript / Node.js</span>
-                    <div class="skill-bar"><div class="skill-fill js"></div></div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">C# / .NET Core</span>
-                    <div class="skill-bar"><div class="skill-fill csharp"></div></div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">SQL Server</span>
-                    <div class="skill-bar"><div class="skill-fill sql"></div></div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">PostgreSQL</span>
-                    <div class="skill-bar"><div class="skill-fill pg"></div></div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">HTML5 & CSS3</span>
-                    <div class="skill-bar"><div class="skill-fill htmlcss"></div></div>
-                </div>
+            <div class="skills-grid">
+                <div class="skill-badge"><i data-lucide="file-json-2"></i><span>JavaScript / Node.js</span></div>
+                <div class="skill-badge"><i data-lucide="blocks"></i><span>C# / .NET Core</span></div>
+                <div class="skill-badge"><i data-lucide="database"></i><span>SQL Server</span></div>
+                <div class="skill-badge"><i data-lucide="server"></i><span>PostgreSQL</span></div>
+                <div class="skill-badge"><i data-lucide="file-code-2"></i><span>HTML5 & CSS3</span></div>
+                <div class="skill-badge"><i data-lucide="layout-template"></i><span>React & UI</span></div>
+                <div class="skill-badge"><i data-lucide="cloud"></i><span>Azure / Cloud</span></div>
+                <div class="skill-badge"><i data-lucide="git-branch"></i><span>Git & CI/CD</span></div>
             </div>
         </section>
 
@@ -117,28 +113,40 @@
                 <h2>Servicios Profesionales</h2>
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>🤖 Bots & Automatización</h3>
-                        <p>Desarrollo de bots inteligentes para WhatsApp y Telegram. Automatiza la atención al cliente, respuestas frecuentes y gestión de pedidos 24/7.</p>
+                        <div class="service-icon"><i data-lucide="bot"></i></div>
+                        <h3>Bots & Automatización</h3>
+                        <p>Desarrollo de bots inteligentes para WhatsApp y Telegram. Automatiza la atención al cliente,
+                            respuestas frecuentes y gestión de pedidos 24/7.</p>
                     </div>
                     <div class="service-card">
-                        <h3>💻 Desarrollo Web Moderno</h3>
-                        <p>Sitios web responsivos y de alto rendimiento. Desde landing pages hasta aplicaciones complejas utilizando las últimas tecnologías del mercado.</p>
+                        <div class="service-icon"><i data-lucide="layout"></i></div>
+                        <h3>Desarrollo Web Moderno</h3>
+                        <p>Sitios web responsivos y de alto rendimiento. Desde landing pages hasta aplicaciones
+                            complejas utilizando las últimas tecnologías del mercado.</p>
                     </div>
                     <div class="service-card">
-                        <h3>⚙️ Aplicaciones a Medida</h3>
-                        <p>Sistemas de gestión (ERP/CRM) personalizados, integraciones con APIs de terceros, paneles administrativos y lógica de negocio compleja.</p>
+                        <div class="service-icon"><i data-lucide="settings"></i></div>
+                        <h3>Aplicaciones a Medida</h3>
+                        <p>Sistemas de gestión (ERP/CRM) personalizados, integraciones con APIs de terceros, paneles
+                            administrativos y lógica de negocio compleja.</p>
                     </div>
                     <div class="service-card">
-                        <h3>🗄️ Consultoría de Bases de Datos</h3>
-                        <p>Diseño de arquitectura, optimización de consultas, migración de datos y administración de servidores SQL Server y PostgreSQL.</p>
+                        <div class="service-icon"><i data-lucide="database"></i></div>
+                        <h3>Consultoría de Bases de Datos</h3>
+                        <p>Diseño de arquitectura, optimización de consultas, migración de datos y administración de
+                            servidores SQL Server y PostgreSQL.</p>
                     </div>
                     <div class="service-card">
-                        <h3>🛡️ Mantenimiento & Soporte</h3>
-                        <p>Planes de mantenimiento preventivo y correctivo. Actualizaciones de seguridad, backups y monitoreo de rendimiento.</p>
+                        <div class="service-icon"><i data-lucide="shield-check"></i></div>
+                        <h3>Mantenimiento & Soporte</h3>
+                        <p>Planes de mantenimiento preventivo y correctivo. Actualizaciones de seguridad, backups y
+                            monitoreo de rendimiento.</p>
                     </div>
                     <div class="service-card">
-                        <h3>🔌 Integración de Sistemas</h3>
-                        <p>Conexión entre diferentes plataformas de software para unificar flujos de trabajo y centralizar la información de tu negocio.</p>
+                        <div class="service-icon"><i data-lucide="plug"></i></div>
+                        <h3>Integración de Sistemas</h3>
+                        <p>Conexión entre diferentes plataformas de software para unificar flujos de trabajo y
+                            centralizar la información de tu negocio.</p>
                     </div>
                 </div>
             </section>
@@ -147,31 +155,35 @@
                 <h2>Trayectoria Profesional</h2>
                 <div class="exp-list">
                     <div class="exp-item">
-                        <div class="exp-icon">🖥️</div>
+                        <div class="exp-icon"><i data-lucide="server"></i></div>
                         <div>
                             <h3>Desarrollo Backend & APIs</h3>
-                            <p>Arquitectura y construcción de servicios RESTful y SOAP robustos utilizando <strong>C# y .NET Core</strong>. Implementación de principios SOLID y patrones de diseño.</p>
+                            <p>Arquitectura y construcción de servicios RESTful y SOAP robustos utilizando <strong>C# y
+                                    .NET Core</strong>. Implementación de principios SOLID y patrones de diseño.</p>
                         </div>
                     </div>
                     <div class="exp-item">
-                        <div class="exp-icon">💾</div>
+                        <div class="exp-icon"><i data-lucide="hard-drive"></i></div>
                         <div>
                             <h3>Ingeniería de Datos</h3>
-                            <p>Gestión avanzada de <strong>SQL Server y Oracle</strong>. Uso experto de ORMs como Entity Framework Core para capas de acceso a datos eficientes.</p>
+                            <p>Gestión avanzada de <strong>SQL Server y Oracle</strong>. Uso experto de ORMs como Entity
+                                Framework Core para capas de acceso a datos eficientes.</p>
                         </div>
                     </div>
                     <div class="exp-item">
-                        <div class="exp-icon">🔧</div>
+                        <div class="exp-icon"><i data-lucide="wrench"></i></div>
                         <div>
                             <h3>Soporte & Infraestructura</h3>
-                            <p>Experiencia integral en diagnóstico de hardware, electrónica aplicada y administración de servidores Windows/Linux.</p>
+                            <p>Experiencia integral en diagnóstico de hardware, electrónica aplicada y administración de
+                                servidores Windows/Linux.</p>
                         </div>
                     </div>
                     <div class="exp-item">
-                        <div class="exp-icon">🚀</div>
+                        <div class="exp-icon"><i data-lucide="rocket"></i></div>
                         <div>
                             <h3>Liderazgo Ágil</h3>
-                            <p>Gestión de equipos bajo metodología <strong>Scrum</strong>. Planificación de sprints, revisión de código y mentoring técnico.</p>
+                            <p>Gestión de equipos bajo metodología <strong>Scrum</strong>. Planificación de sprints,
+                                revisión de código y mentoring técnico.</p>
                         </div>
                     </div>
                 </div>
@@ -179,50 +191,109 @@
 
             <section id="portafolio">
                 <h2>Proyectos Destacados</h2>
-                <div class="portfolio-list">
-                    <div class="portfolio-item">
-                        <span class="portfolio-icon">📅</span>
-                        <h3>Sistema Médico</h3>
-                        <p>Plataforma integral para clínicas: agenda de citas en tiempo real, historial clínico digital y facturación electrónica.</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="./public/images/medical_dashboard_1772549741638.png" alt="Sistema Médico"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Sistema Médico</h3>
+                            <p>Plataforma integral para clínicas: agenda de citas, historial digital y facturación.</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>.NET Core</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn-outline"><i data-lucide="external-link"></i> Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-item">
-                        <span class="portfolio-icon">🛒</span>
-                        <h3>E-commerce B2B</h3>
-                        <p>Tienda en línea con integración de inventarios en tiempo real, múltiples listas de precios y pasarela de pagos.</p>
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="./public/images/ecommerce_b2b_1772549754443.png" alt="E-commerce B2B"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-commerce B2B</h3>
+                            <p>Tienda en línea con integración de inventarios, listas de precios y pasarela de pagos.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span>Next.js</span>
+                                <span>Node.js</span>
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn-outline"><i data-lucide="external-link"></i> Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-item">
-                        <span class="portfolio-icon">📊</span>
-                        <h3>Dashboard Financiero</h3>
-                        <p>Panel de control para visualización de KPIs financieros, reportes automáticos en PDF/Excel y alertas de presupuesto.</p>
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="./public/images/financial_dashboard_1772549772414.png" alt="Dashboard Financiero"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Dashboard Financiero</h3>
+                            <p>Panel de control para visualización de KPIs, reportes automáticos en PDF/Excel y alertas.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span>Angular</span>
+                                <span>C#</span>
+                                <span>Azure</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn-outline"><i data-lucide="external-link"></i> Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-item">
-                        <span class="portfolio-icon">📝</span>
-                        <h3>CMS Personalizado</h3>
-                        <p>Gestor de contenidos modular para portales de noticias, con roles de usuario, flujo de aprobación y SEO tools.</p>
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="./public/images/cms_portal_1772549789395.png" alt="CMS Personalizado"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>CMS Personalizado</h3>
+                            <p>Gestor de contenidos modular para portales de noticias, flujo de aprobación y SEO.</p>
+                            <div class="portfolio-tags">
+                                <span>Vue.js</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="btn-outline"><i data-lucide="external-link"></i> Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="contacto">
                 <h2>Hablemos de tu Proyecto</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                <form id="contactForm" class="premium-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre"><i data-lucide="user"></i> Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono"><i data-lucide="phone"></i> Teléfono / WhatsApp</label>
+                            <input type="number" id="telefono" name="telefono" placeholder="Ej. 5555 1234" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="telefono">Teléfono / WhatsApp</label>
-                        <input type="number" id="telefono" name="telefono" placeholder="Ej. 5555 1234" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email"><i data-lucide="mail"></i> Correo Electrónico</label>
                         <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="mensaje">¿Cómo puedo ayudarte?</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Describe brevemente tu idea o necesidad..." required></textarea>
+                        <label for="mensaje"><i data-lucide="message-square"></i> ¿Cómo puedo ayudarte?</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Describe brevemente tu idea o necesidad..."
+                            required></textarea>
                     </div>
-                    <button type="submit">Enviar Mensaje</button>
+                    <button type="submit" class="btn-submit">
+                        <i data-lucide="send"></i> Enviar Mensaje
+                    </button>
                     <div id="formMsg"></div>
                 </form>
             </section>
@@ -233,25 +304,33 @@
                     <div class="faq-chibi-right">
                         <img src="./public/images/chibi_dude.png" alt="Chibi Helper" loading="lazy" />
                     </div>
-                    
+
                     <details class="faq-card">
                         <summary>💡 ¿Qué tecnologías utilizas principalmente?</summary>
-                        <div class="faq-answer">Mi stack principal es el ecosistema Microsoft (.NET Core, C#, SQL Server) para el backend, complementado con JavaScript moderno, HTML5/CSS3 y frameworks de frontend para la interfaz.</div>
+                        <div class="faq-answer">Mi stack principal es el ecosistema Microsoft (.NET Core, C#, SQL
+                            Server) para el backend, complementado con JavaScript moderno, HTML5/CSS3 y frameworks de
+                            frontend para la interfaz.</div>
                     </details>
-                    
+
                     <details class="faq-card">
                         <summary>🔧 ¿Ofreces soporte post-lanzamiento?</summary>
-                        <div class="faq-answer">Sí, todos mis desarrollos incluyen un periodo de garantía. Además, ofrezco planes de mantenimiento mensual para asegurar que tu software siga operando óptimamente.</div>
+                        <div class="faq-answer">Sí, todos mis desarrollos incluyen un periodo de garantía. Además,
+                            ofrezco planes de mantenimiento mensual para asegurar que tu software siga operando
+                            óptimamente.</div>
                     </details>
-                    
+
                     <details class="faq-card">
                         <summary>⚡ ¿Cómo es el proceso de trabajo?</summary>
-                        <div class="faq-answer">Trabajo con metodologías ágiles. Iniciamos con una reunión de descubrimiento, definimos el alcance, y procedo con entregas incrementales para que veas el progreso paso a paso.</div>
+                        <div class="faq-answer">Trabajo con metodologías ágiles. Iniciamos con una reunión de
+                            descubrimiento, definimos el alcance, y procedo con entregas incrementales para que veas el
+                            progreso paso a paso.</div>
                     </details>
-                    
+
                     <details class="faq-card">
                         <summary>💰 ¿Cuál es el costo de un proyecto?</summary>
-                        <div class="faq-answer">Cada proyecto es único. El costo depende de la complejidad, funcionalidades requeridas y tiempos de entrega. Contáctame para una cotización gratuita y sin compromiso.</div>
+                        <div class="faq-answer">Cada proyecto es único. El costo depende de la complejidad,
+                            funcionalidades requeridas y tiempos de entrega. Contáctame para una cotización gratuita y
+                            sin compromiso.</div>
                     </details>
                 </div>
             </section>
@@ -262,26 +341,63 @@
     <footer>
         <div class="testimonials-carousel">
             <!-- Duplicados para efecto infinito smooth -->
-            <blockquote class="hero-quote">
-                "Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."
-                <span class="hero-quote-author">— Mario L., Gerente de Operaciones</span>
-            </blockquote>
-            <blockquote class="hero-quote">
-                "Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
-                <span class="hero-quote-author">— Ana R., CTO Startup</span>
-            </blockquote>
-            <blockquote class="hero-quote">
-                "Muy recomendado. Entregó el proyecto a tiempo y la calidad del código es impecable."
-                <span class="hero-quote-author">— Carlos D., Agencia Digital</span>
-            </blockquote>
-             <blockquote class="hero-quote">
-                "Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."
-                <span class="hero-quote-author">— Mario L., Gerente de Operaciones</span>
-            </blockquote>
-            <blockquote class="hero-quote">
-                "Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
-                <span class="hero-quote-author">— Ana R., CTO Startup</span>
-            </blockquote>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ML</div>
+                    <div>
+                        <strong>Mario L.</strong>
+                        <span>Gerente de Operaciones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: var(--primary-light);">AR</div>
+                    <div>
+                        <strong>Ana R.</strong>
+                        <span>CTO Startup</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Muy recomendado. Entregó el proyecto a tiempo y la calidad del código es impecable."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: #2ed573;">CD</div>
+                    <div>
+                        <strong>Carlos D.</strong>
+                        <span>Agencia Digital</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Josue superó nuestras expectativas. El sistema es rápido, seguro y fácil de usar."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ML</div>
+                    <div>
+                        <strong>Mario L.</strong>
+                        <span>Gerente de Operaciones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Excelente comunicación y capacidad técnica. Resolvió problemas complejos de nuestra base de datos."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: var(--primary-light);">AR</div>
+                    <div>
+                        <strong>Ana R.</strong>
+                        <span>CTO Startup</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div style="margin-top: 2rem;">
             <p>&copy; 2025 Josue Garcia Monterroso. Todos los derechos reservados.</p>
@@ -290,12 +406,16 @@
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>
+        <i data-lucide="chevron-up"></i>
     </button>
 
     <!-- Scripts -->
     <script type="module" src="src/index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            lucide.createIcons();
+        });
+    </script>
 </body>
+
 </html>
