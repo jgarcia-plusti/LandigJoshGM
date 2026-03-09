@@ -101,7 +101,6 @@ out/
 
 # Gatsby (si decides migrar en el futuro)
 .cache/
-public/
 
 # Serverless directories
 .serverless/
